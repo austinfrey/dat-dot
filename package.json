@@ -1,13 +1,14 @@
 {
-  "name": "@zigy/dat-dot",
+  "name": "@zigy/dot",
   "version": "0.0.1",
-  "description": "",
+  "description": "A Dat based CLI for sharing .dotfiles",
   "main": "index.js",
   "bin": {
     "dot": "bin.js"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "xo --fix"
   },
   "keywords": [],
   "author": "",
@@ -17,6 +18,28 @@
     "hyperdiscovery": "^8.0.0",
     "hyperdrive": "git+https://github.com/mafintosh/hyperdrive.git#hyperdb-backend",
     "mirror-folder": "^3.0.0",
+    "pump": "^3.0.0",
     "random-access-memory": "^3.0.0"
+  },
+  "xo": {
+    "semicolon": false,
+    "rules": {
+      "no-undef": [
+        "warn",
+        {
+          "typeof": true
+        }
+      ],
+      "prefer-destructuring": [
+        "error",
+        {
+          "object": true,
+          "array": false
+        }
+      ]
+    }
+  },
+  "devDependencies": {
+    "xo": "^0.22.0"
   }
 }
