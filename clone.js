@@ -6,7 +6,7 @@ const mirror = require('mirror-folder')
 
 const dir = path.join(process.env.HOME, '.dotfiles')
 
-function clone (key) {
+function clone (key, cmd) {
 	const drive = hyperdrive(ram, key)
 	drive.on('ready', joinSwarm)
 
