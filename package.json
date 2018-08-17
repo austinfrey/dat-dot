@@ -1,6 +1,6 @@
 {
   "name": "@zigy/dot",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A Dat based CLI for sharing .dotfiles",
   "main": "index.js",
   "bin": {
