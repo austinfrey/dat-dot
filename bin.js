@@ -1,7 +1,9 @@
+#! /usr/bin/env node
+
 const cli = require('commander')
 const {clone, sync, add, cat, auth} = require('./lib')
 
-cli.version('0.0.1')
+cli.version(require('./package.json').version)
 
 cli.command('clone <key>').action(clone)
 
